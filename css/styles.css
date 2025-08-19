@@ -33,7 +33,13 @@ button {
   ↓ Containers styles ↓ */
 
 .section {
-	padding: 120px 0;
+	padding: 96px 0;
+}
+
+@media (min-width: 1158px) {
+	.section {
+		padding: 120px 0;
+	}
 }
 
 .container {
@@ -375,6 +381,12 @@ button {
 	background-size: cover;
 }
 
+@media (max-width: 767px) and (min-resolution: 192dpi) {
+	.hero {
+		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/img-phone-0@2x.jpg");
+	}
+}
+
 @media (min-width: 768px) {
 	.hero {
 		max-width: 768px;
@@ -384,12 +396,24 @@ button {
 	}
 }
 
+@media (min-width: 768px) and (min-resolution: 192dpi) {
+	.hero {
+		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/img-tablet-0@2x.jpg");
+	}
+}
+
 @media (min-width: 1158px) {
 	.hero {
 		max-width: 1440px;
 		padding: 188px 0;
 
 		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/img-desk-0.jpg");
+	}
+}
+
+@media (min-width: 1158px) and (min-resolution: 192dpi) {
+	.hero {
+		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/img-desk-0@2x.jpg");
 	}
 }
 
@@ -432,4 +456,71 @@ button {
 	border: none;
 	color: #fff;
 	background: #4d5ae5;
+}
+
+/* ↑ Hero section styles ↑
+————————————————————————————
+  ↓ Benefits section styles ↓ */
+
+.benefits {}
+
+.benefits-list {
+	display: flex;
+	flex-direction: column;
+	gap: 72px;
+}
+
+@media (min-width: 768px) and (max-width: 1157px) {
+	.benefits-list {
+		flex-flow: row wrap;
+		gap: 72px 24px;
+	}
+}
+
+@media (min-width: 1158px) {
+	.benefits-list {
+		flex-flow: row;
+		gap: 24px;
+	}
+}
+
+.benefits-item {}
+
+@media (min-width: 768px) and (max-width: 1157px)	 {
+	.benefits-item {
+		flex-basis: calc((100% - 24px) / 2);
+	}
+}
+
+.benefits-icon-container {
+	display: none;
+}
+
+@media (min-width: 1158px) {
+	.benefits-icon-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 112px;
+		background-color: #F4F4FD;
+		border-radius: 4px;
+		border: 1px solid #8E8F99;
+		margin-bottom: 8px;
+	}
+}
+
+.benefits-subtitle {
+	margin-bottom: 8px;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.11;
+	letter-spacing: 0.02em;
+	text-align: center;
+	color: #2E2F42;
+}
+
+.benefits-desc {	
+	font-weight: 500;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
 }
