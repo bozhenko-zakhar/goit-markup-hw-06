@@ -637,3 +637,98 @@ button {
 .social-icon {
 	fill: #F4F4FD;
 }
+
+/* ↑ Team section styles ↑
+————————————————————————————
+  ↓ Portfolio section styles ↓ */
+
+.portfolio {}
+
+.portfolio-heading {
+	margin-bottom: 72px;
+	text-transform: capitalize;
+	font-size: 36px;
+	line-height: 1.11;
+	letter-spacing: 0.02em;
+	text-align: center;
+	color: #2E2F42;
+}
+
+.portfolio-list {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 48px 24px;
+}
+
+@media (min-width: 768px) and (max-width: 1157px) {
+	.portfolio-list {
+		gap: 72px 24px;
+	}
+}
+
+.portfolio-item {}
+
+.portfolio-item {
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+@media (min-width: 1158px) {
+	.portfolio-item {
+		box-shadow: none;
+	}
+
+	.portfolio-item:hover {
+		cursor: pointer;
+		box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+	}
+}
+
+.overlay-box {
+	position: relative;
+	overflow: hidden;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: #F4F4FD;
+	padding: 40px 28px;
+	background-color: #4D5AE5;
+	height: 100%;
+	width: 100%;
+	transform: translateY(100%);
+}
+
+@media (min-width: 1158px) {
+	.overlay {
+		padding: 40px 32px;
+	}
+}
+
+.portfolio-info {
+	text-align: center;
+	padding: 32px 16px;
+	border-right: 1px solid #E7E9FC;
+	border-bottom: 1px solid #E7E9FC;
+	border-left: 1px solid #E7E9FC;
+}
+
+.portfolio-name {
+	margin-bottom: 8px;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+	color: #2E2F42;
+}
+
+.portfolio-product {
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+}
+
+.portfolio-item:hover .overlay {
+	transform: translateY(0%);
+}
