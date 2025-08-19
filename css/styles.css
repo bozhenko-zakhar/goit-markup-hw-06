@@ -519,8 +519,28 @@ button {
 	color: #2E2F42;
 }
 
+@media (min-width: 1158px) {
+	.benefits-subtitle {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 1.2;
+		text-align: left;
+	}
+}
+
 .benefits-desc {	
 	font-weight: 500;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 }
+
+@media (min-width: 1158px) {
+	.benefits-subtitle {
+		font-size: 40px;
+		line-height: 1.1;
+	}
+}
+
+/* ↑ Benefits section styles ↑
+————————————————————————————
+  ↓ Team section styles ↓ */
