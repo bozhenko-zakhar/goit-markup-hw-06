@@ -924,6 +924,7 @@ button {
 
 .subscribe-label {
 	display: block;
+	text-align: center;
 	margin-bottom: 16px;
 }
 
@@ -952,6 +953,7 @@ button {
 	font-size: 12px;
 	line-height: 2;
 	letter-spacing: 0.04em;
+	color: white;
 
 	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1005,6 +1007,11 @@ button {
 	.subscribe-input::placeholder {
 		opacity: 1;
 	}
+}
+
+.subscribe-input:focus-within {
+	border: 1px solid #4D5AE5;
+	outline: transparent;
 }
 
 .subscribe-button:hover, 
