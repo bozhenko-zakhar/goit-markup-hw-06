@@ -243,7 +243,7 @@ button {
 
 .header-page a:hover,
 .header-page a:focus {
-	color: #404BBF;
+	color: #4D5AE5;
 }
 
 .header-nav-item:first-child .header-nav-link::after {
@@ -409,7 +409,7 @@ button {
 .header-modal-contacts-link:focus,
 .header-modal-contacts-item:first-child .header-modal-contacts-link:hover,
 .header-modal-contacts-item:first-child .header-modal-contacts-link:focus {
-	color: #404BBF;
+	color: #4D5AE5;
 }
 
 .header-modal-social-link:hover,
