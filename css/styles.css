@@ -289,16 +289,28 @@ button {
 	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media (min-width: 768px) {
+	.header-modal-overlay {
+		display: none;
+	}
+}
+
 .is-open {
 	opacity: 1;
 	pointer-events: auto;
 }
 
 .header-modal {
+	display: flex;
+	flex-direction: column;
+	position: relative;
 	max-width: 320px;
-	min-height: 640px;
+	min-height: 100%;
 	margin: auto;
-	padding: 24px 24px 40px 16px;
+	padding-top: 24px;
+	padding-left: 24px;
+	padding-bottom: 40px;
+	padding-right: 16px;
 }
 
 .header-cross-button {
@@ -306,7 +318,9 @@ button {
 	justify-content: center;
 	align-items: center;
 
-	margin-left: auto;
+	position: absolute;
+	top: 24px;
+	right: 24px;
 	width: 24px;
 	height: 24px;
 	padding: 0;
@@ -321,7 +335,8 @@ button {
 }
 
 .header-modal-nav {
-	margin: 32px 0 168px;
+	margin-top: 48px;
+	margin-bottom: auto;
 }
 
 .header-modal-nav-list {
@@ -349,13 +364,13 @@ button {
 
 .header-modal-contacts {
 	font-style: normal;
+	margin-bottom: 48px;
 }
 
 .header-modal-contacts-list {
 	display: flex;
 	flex-direction: column;
 	gap: 24px;
-	margin-bottom: 48px;
 }
 
 .header-modal-contacts-item {}
@@ -576,12 +591,17 @@ button {
 	color: #2E2F42;
 }
 
+@media (min-width: 768px) {
+	.benefits-subtitle {
+		text-align: left;
+	}
+}
+
 @media (min-width: 1158px) {
 	.benefits-subtitle {
 		font-weight: 500;
 		font-size: 20px;
 		line-height: 1.2;
-		text-align: left;
 	}
 }
 
@@ -618,7 +638,7 @@ button {
 .team-list {
 	display: flex;
 	flex-direction: column;
-	gap: 24px;
+	gap: 72px;
 	text-align: center;
 }
 
@@ -708,7 +728,7 @@ button {
 .portfolio-list {
 	display: flex;
 	flex-flow: row wrap;
-	gap: 48px 24px;
+		gap: 48px 24px;
 }
 
 @media (min-width: 768px) and (max-width: 1157px) {
@@ -762,17 +782,10 @@ button {
 }
 
 .portfolio-info {
-	text-align: center;
 	padding: 32px 16px;
 	border-right: 1px solid #E7E9FC;
 	border-bottom: 1px solid #E7E9FC;
 	border-left: 1px solid #E7E9FC;
-}
-
-@media (min-width: 768px) {
-	.portfolio-info {
-		text-align: left;
-	}
 }
 
 .portfolio-name {
@@ -928,14 +941,9 @@ button {
 	margin-bottom: 16px;
 }
 
-@media (min-width: 768px) and (max-width: 1157px) {
+@media (min-width: 768px){
 	.subscribe-label {
-		width: calc((100% - 24px) / 2);
-	}
-}
-
-@media (min-width: 768px) {
-	.subscribe-label {
+		width: 264px;
 		margin-bottom: 0;
 	}
 }
@@ -947,7 +955,7 @@ button {
 	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 
 	padding-left: 16px;
-	width: 264px;
+	width: 100%;
 	height: 40px;
 
 	font-size: 12px;
